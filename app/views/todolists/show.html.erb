@@ -1,0 +1,13 @@
+
+<div class="container">
+  <table class="table table-striped">
+    <tr><th>Title</th><td><%= @todolist.name %></td></tr>
+    <tr><th>Due Date</th><td><%= @todolist.due_date %></td></tr>
+    <tr><th>Note</th><td><%= @todolist.note %></td>
+    </tr>
+  </table>
+
+  <button type="button">
+    <%= link_to 'Back to index', todolists_path, class: 'btn btn-secondary' %>
+  </button>
+</div>
